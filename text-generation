@@ -1,0 +1,14 @@
+from transformers import pipeline
+
+# Load a pre-trained model for text generation
+nlp = pipeline("text-generation", model="gpt2")
+
+def generate_text(prompt):
+    response = nlp(prompt, max_length=50)
+    return response[0]['generated_text']
+
+# Example usage:
+prompt = "The future of AI is"
+generated_text = generate_text(prompt)
+print(generated_text)
+ 
