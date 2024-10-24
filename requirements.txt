@@ -1,0 +1,1 @@
+!pip install Flask transformers torch gym opencv-python py2neo web3 stable-baselines3 scikit-learn numpy pandas matplotlib tensorflow requests nltk spacy pymongo beautifulsoup4
